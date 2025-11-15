@@ -10,7 +10,7 @@
     <!-- Blog Header -->
     <div class="blog-header">
         <div class="blog-header-content">
-            <h1 class="blog-title">Blogue</h1>
+            <h1 class="blog-title">Blog</h1>
             <p class="blog-description">Découvrez nos derniers articles et actualités</p>
         </div>
     </div>
