@@ -7,14 +7,14 @@
 
         <!-- Email Address -->
         <div>
-            <x-input-label for="email" :value="__('Email')" />
+            <x-input-label for="email" :value="__('Adresse e-mail')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+            <x-input-label for="password" :value="__('Mot de passe')" />
             <x-text-input id="password" class="block mt-1 w-full"
                             type="password"
                             name="password"
@@ -26,12 +26,12 @@
         <div class="flex items-center justify-between mt-4">
             <label for="remember_me" class="inline-flex items-center">
                 <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                <span class="ms-2 text-sm text-gray-600">{{ __('Se souvenir de moi') }}</span>
             </label>
 
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Forgot password?') }}
+                    {{ __('Mot de passe oublié ?') }}
                 </a>
             @endif
         </div>
@@ -39,15 +39,15 @@
         <!-- Full width Login button -->
         <div class="mt-6">
             <x-primary-button class="w-full justify-center py-3">
-                {{ __('Login') }}
+                {{ __('Se connecter') }}
             </x-primary-button>
         </div>
 
         <!-- Register link centered below -->
         <div class="text-center mt-6">
-            <span class="text-sm text-gray-600">{{ __("Don't have an account?") }}</span>
+            <span class="text-sm text-gray-600">{{ __("Vous n'avez pas de compte ?") }}</span>
             <a class="underline text-sm text-indigo-600 hover:text-indigo-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ms-1" href="{{ route('register') }}">
-                {{ __('Register') }}
+                {{ __("S'inscrire") }}
             </a>
         </div>
     </form>
